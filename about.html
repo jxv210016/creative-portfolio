@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="developer/photographer/videographer Jay Vanam"
+    />
+    <meta
+      name="keywords"
+      content="Developer, Photographer, Videographer, Jay Vanam, Video, Photo, Jay Vanam Video, Jay Vanam Photo, Photographer, Jay Vanam Photography"
+    />
+    <meta name="author" content="Jay Vanam" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>About | Jay Vanam</title>
+  </head>
+
+  <body>
+    <span style="cursor: pointer" onclick="openNav()"
+      ><p id="menu-icon">MENU</p></span
+    >
+
+    <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+
+    <div id="sidenav">
+      <div class="menu">
+        <a href="index.html" id="header">
+          <img src="media/name2.png" alt="Jay Vanam" id="name-image" />
+        </a>
+
+        <a href="projects.html" id="here">Selected Projects</a>
+        <div class="dropdown-container">
+          <a href="/other-html-pages/fitty.html">fitty</a>
+          <a href="/other-html-pages/entry-wizard.html">entry wizard</a>
+          <a href="/other-html-pages/reviewgpt.html">reviewGPT</a>
+          <a href="/other-html-pages/trendalytics.html">trendalytics</a>
+          <a href="/other-html-pages/gitreviews.html">gitreviews</a>
+        </div>
+        <a href="about.html">about</a>
+        <a href="media.html">media</a>
+        <a href="contact.html">contact</a>
+      </div>
+    </div>
+
+    <div class="main noninvert">
+      <h1>About Me</h1>
+
+      <!-- Section 1: Photo and About Me in a Box -->
+      <div class="about-me-section">
+        <div class="left-column">
+          <img
+            src="media/about/profile.png"
+            alt="Jay Vanam"
+            class="about-photo"
+          />
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('media/assets/Jashith_Vanam_Resume.pdf')"
+            >
+              Resume
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='contact.html'"
+            >
+              Contact
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="media/assets/linkedin.png"
+              alt="My LinkedIn Profile"
+              class="icon"
+              onclick="window.open('https://www.linkedin.com/in/jay-vanam/', '_blank')"
+            />
+            <img
+              src="media/assets/github.png"
+              alt="My Github Profile"
+              class="icon"
+              onclick="window.open('https://github.com/jxv210016', '_blank')"
+            />
+          </div>
+        </div>
+
+        <div class="about-text-box">
+          <h2>Hi, I'm Jay Vanam 👋</h2>
+          <p>
+            I'm a junior at the University of Texas at Dallas. I really enjoy
+            video editing, photography, listening to music, and sleeping. I also
+            love to watch football and F1. I'm a die-hard Cowboys fan and my
+            favorite F1 team is Ferrari. With Lewis joining, they are definitely
+            going to beat Red Bull for sure.
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 2: Slideshow and What I'm Listening To Inline -->
+      <div class="content-inline">
+        <div class="slideshow-section">
+          <h2>My Favorite Moments</h2>
+          <div class="slideshow-container">
+            <div class="mySlide fade">
+              <img
+                src="media/about/IMG_5728.JPG"
+                alt="Moment 1"
+                class="slide-photo"
+              />
+            </div>
+            <div class="mySlide fade">
+              <img
+                src="media/about/20231122_174811_E75159.JPG"
+                alt="Moment 2"
+                class="slide-photo"
+              />
+            </div>
+            <div class="mySlide fade">
+              <img
+                src="media/about/20231122_174817_E3DE1A.jpeg"
+                alt="Moment 3"
+                class="slide-photo"
+              />
+            </div>
+            <div class="mySlide fade">
+              <img
+                src="media/about/DSCN0789.JPG"
+                alt="Moment 4"
+                class="slide-photo"
+              />
+            </div>
+            <div class="mySlide fade">
+              <img
+                src="media/about/IMG_9122.JPG"
+                alt="Moment 5"
+                class="slide-photo"
+              />
+            </div>
+
+            <!-- Slideshow controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
+
+        <!-- What Am I Listening To -->
+        <div class="listening-section">
+          <h2>What Am I Listening To</h2>
+          <div class="listening-box-container">
+            <a href="javascript:void(0)" class="listening-box">
+              <img
+                src="media/albums/chiriver.JPG"
+                alt="Listening to"
+                class="listening-photo"
+              />
+            </a>
+            <!-- Image-based button -->
+            <button class="listening-button" onclick="toggleSongs()">
+              <img
+                src="media/clickme.png"
+                alt="Click Me"
+                class="clickme-button-image"
+              />
+            </button>
+          </div>
+          <div id="song-list" class="song-list">
+            <ul>
+              <li class="song-item mini-album-cover-container">
+                <img
+                  src="media/albums/nightslikethis.jpeg"
+                  alt="Album 1"
+                  class="mini-album-cover"
+                />
+                <div class="play-button" onclick="showPopup('nights', event)">
+                  ▶
+                </div>
+                NIGHTS LIKE THIS - THE KID LAROI
+              </li>
+              <li class="song-item mini-album-cover-container">
+                <img
+                  src="media/albums/wrongones.jpeg"
+                  alt="Album 3"
+                  class="mini-album-cover"
+                />
+                <div
+                  class="play-button"
+                  onclick="showPopup('wrongones', event)"
+                >
+                  ▶
+                </div>
+                WRONG ONES - POST MALONE
+              </li>
+              <li class="song-item mini-album-cover-container">
+                <img
+                  src="media/albums/bags.webp"
+                  alt="Album 2"
+                  class="mini-album-cover"
+                />
+                <div class="play-button" onclick="showPopup('bags', event)">
+                  ▶
+                </div>
+                BAGS - CLAIRO
+              </li>
+              <li class="song-item mini-album-cover-container">
+                <img
+                  src="media/albums/taste.jpeg"
+                  alt="Album 2"
+                  class="mini-album-cover"
+                />
+                <div class="play-button" onclick="showPopup('taste', event)">
+                  ▶
+                </div>
+                TASTE - LIL TECCA
+              </li>
+              <li class="song-item mini-album-cover-container">
+                <img
+                  src="media/albums/timeless.jpg"
+                  alt="Album 2"
+                  class="mini-album-cover"
+                />
+                <div class="play-button" onclick="showPopup('timeless', event)">
+                  ▶
+                </div>
+                Timeless - THE WEEKND & PLAYBOI CARTI
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Spotify embeds -->
+    <div id="spotify-popup" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div id="spotify-embed-container"></div>
+      </div>
+    </div>
+
+    <script>
+      // Slideshow JavaScript
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlide");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+
+      // Toggle song list display
+      let songsVisible = false;
+
+      function toggleSongs() {
+        const songItems = document.querySelectorAll(".song-item");
+
+        if (!songsVisible) {
+          // Show songs one by one
+          songItems.forEach((song, index) => {
+            setTimeout(() => {
+              song.style.opacity = "1"; // Show each song with a delay
+            }, index * 300); // Staggered appearance
+          });
+          songsVisible = true;
+        } else {
+          // Hide songs one by one
+          [...songItems].reverse().forEach((song, index) => {
+            setTimeout(() => {
+              song.style.opacity = "0"; // Hide each song with a delay
+            }, index * 300); // Staggered disappearance
+          });
+          songsVisible = false;
+        }
+      }
+
+      // Modal Popup logic for Spotify embeds
+      function showPopup(songId, event) {
+        const spotifyEmbeds = {
+          nights:
+            '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1XBYiRV30ykHw5f4wm6qEn?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+          wrongones:
+            '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2CIXO1jQbrV1hlfI7FUKld?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+          bags: '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6UFivO2zqqPFPoQYsEMuCc?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+          taste:
+            '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3IM6Cc6bK88qFYXrF8wh8t?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+          timeless:
+            '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1Es7AUAhQvapIcoh3qMKDL?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        };
+
+        const modal = document.getElementById("spotify-popup");
+        modal.style.display = "block";
+
+        // Get the position of the mini-album cover and position the modal next to it
+        const rect = event.target.getBoundingClientRect();
+        modal.style.top = rect.top + window.scrollY + "px";
+        modal.style.left = rect.left + rect.width + 10 + "px"; // 10px to the right
+
+        const embedContainer = document.getElementById(
+          "spotify-embed-container"
+        );
+        embedContainer.innerHTML = spotifyEmbeds[songId];
+      }
+
+      function closePopup() {
+        const modal = document.getElementById("spotify-popup");
+        modal.style.display = "none";
+      }
+
+      // Close the modal if user clicks outside of it
+      window.onclick = function (event) {
+        const modal = document.getElementById("spotify-popup");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

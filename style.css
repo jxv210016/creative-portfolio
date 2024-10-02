@@ -1,0 +1,696 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
+  background-color: #ede8df; /* Light Taupe */
+}
+
+/* Fixed sidenav, full height */
+#sidenav {
+  height: 100%;
+  width: 25vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links */
+.menu a {
+  padding-bottom: 0.3em;
+  padding-top: 0.3em;
+  padding-left: 3em;
+  text-decoration: none;
+  font-size: 1em;
+  color: #a1b6b2; /* Deep Teal */
+  display: block;
+  background: none;
+  text-align: left;
+}
+
+/* On mouse-over */
+.menu a:hover {
+  font-weight: bold;
+  color: #2b3f40; /* Charcoal Slate */
+}
+
+.menu a:focus {
+  background-color: #d0e5e2; /* Muted Mint */
+}
+
+#here {
+  font-weight: bold;
+  color: #2b3f40; /* Charcoal Slate */
+}
+
+.dropdown-container {
+  padding-left: 1em;
+  margin: 0;
+}
+
+#header {
+  display: inline-block;
+  width: auto;
+  font-family: "Playfair Display", serif;
+  font-size: 2em;
+  padding: 0;
+  margin-left: 1.5em;
+  padding-bottom: 10px;
+  margin-bottom: 3em;
+  margin-top: 1em;
+  color: #2b3f40; /* Charcoal Slate */
+}
+
+#name-image {
+  width: auto;
+  height: 130px; /* Adjust the height to your preference */
+  display: block;
+  margin-left: -4rem;
+  margin-top: -2rem;
+}
+
+/* Main content */
+.main {
+  width: 75vw;
+  margin-left: 25vw; /* Same as the width of the sidenav */
+  font-size: 1em;
+  padding-top: 2.5em;
+  padding-bottom: 5em;
+  padding-left: 2em;
+  background-color: #ede8df; /* Light Taupe */
+  color: #2b3f40; /* Charcoal Slate */
+}
+
+.main img:hover {
+  filter: invert(1);
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  padding-bottom: 0.1em;
+  border-bottom: solid 5px #a1b6b2; /* Deep Teal */
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+p {
+  margin-top: 0.3em;
+  margin-bottom: 0.8em;
+}
+
+.main a {
+  text-decoration: none;
+}
+.main a:link {
+  color: #2b3f40; /* Charcoal Slate */
+  background-color: #a1b6b2; /* Deep Teal */
+}
+.main a:visited {
+  color: #46443e;
+  background-color: #d0e5e2; /* Muted Mint */
+}
+.main a:hover {
+  background-color: #a1b6b2; /* Deep Teal */
+  color: #2b3f40; /* Charcoal Slate */
+}
+.main a:active {
+  background-color: #a1b6b2; /* Deep Teal */
+  color: #2b3f40; /* Charcoal Slate */
+}
+
+#biophoto {
+  max-height: 70vh;
+  max-width: 20vw;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+}
+
+#biophoto:hover {
+  filter: invert(1);
+}
+
+.noninvert {
+  overflow-x: hidden;
+}
+
+.noninvert img:hover {
+  filter: none;
+}
+
+.section {
+  display: block;
+  max-width: 50vw;
+}
+
+.caption {
+  margin-top: 1em;
+  margin-bottom: 5em;
+}
+
+.mySlides {
+  display: none;
+  overflow: hidden;
+  text-align: center;
+}
+
+.mySlides img {
+  max-width: 80%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 70vw;
+  height: 90vh;
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 12px;
+  margin-top: -22px;
+  color: #2b3f40; /* Charcoal Slate */
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #2b3f40; /* Charcoal Slate */
+  font-size: 15px;
+  padding: 8px 12px;
+  text-align: center;
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin: auto;
+  bottom: 0;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #2b3f40; /* Charcoal Slate */
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  opacity: 0.3;
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 3px 20vh;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: none;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+div.gallery {
+  margin: 5px;
+  float: left;
+  height: 40vh;
+}
+
+div.gallery img {
+  height: 100%;
+  width: auto;
+}
+
+div.workdesc {
+  display: none;
+  position: absolute;
+  top: 80%;
+  right: 0;
+  margin-right: 4vw;
+  background: #a1b6b2; /* Deep Teal */
+  padding: 2px 6px;
+  color: #2b3f40; /* Charcoal Slate */
+  font-weight: 800;
+  font-size: 1.3em;
+}
+
+div.gallery:hover .workdesc {
+  display: block;
+}
+
+#closebtn {
+  display: none;
+}
+
+#menu-icon {
+  text-align: center;
+  display: none;
+  color: #2b3f40; /* Charcoal Slate */
+  font-weight: bold;
+  border-bottom: solid 5px #a1b6b2; /* Deep Teal */
+}
+
+#view {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  color: #2b3f40; /* Charcoal Slate */
+  position: absolute;
+  right: 1em;
+  bottom: 2em;
+}
+
+/* New project sections */
+.project-section {
+  margin-top: 2em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #a1b6b2; /* Deep Teal for consistency */
+}
+
+.project-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+  color: #2b3f40; /* Charcoal Slate */
+  border-bottom: solid 3px #a1b6b2; /* Consistent with heading styling */
+}
+
+.project-section p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #2b3f40; /* Charcoal Slate for the text */
+}
+
+.project-section ul {
+  list-style-type: disc;
+  margin-left: 1.5em;
+  padding-left: 1em;
+  color: #2b3f40;
+}
+
+.project-section ul li {
+  margin-bottom: 0.5em;
+}
+
+/* General box styles */
+.color-box {
+  width: 400px;
+  height: 400px;
+  position: relative; /* Ensure the image can be positioned inside */
+  transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Fitty box color*/
+.fitty-box {
+  background-color: #f5d4c3; /* Light Peach */
+  position: relative;
+  z-index: 1;
+}
+
+.box-link:hover .fitty-box {
+  background-color: #e09789; /* Soft Coral on hover */
+}
+
+/* Entry Wizard box color */
+.entry-box {
+  background-color: #c8dbd7; /* Light Teal */
+}
+
+.box-link:hover .entry-box {
+  background-color: #3c5556; /* Dark Slate on hover */
+}
+
+/* ReviewGPT box color */
+.review-box {
+  background-color: #f6efe7; /* Cream */
+}
+
+.box-link:hover .review-box {
+  background-color: #a1b6b2; /* Deep Teal on hover */
+}
+
+/* Trendalytics box color */
+.trendalytics-box {
+  background-color: #e9f1ef; /* Pale Mint */
+}
+
+.box-link:hover .trendalytics-box {
+  background-color: #2b3f40; /* Charcoal Slate on hover */
+}
+
+/* GitReviews box color */
+.gitreviews-box {
+  background-color: #d0e5e2; /* Muted Mint */
+}
+
+.box-link:hover .gitreviews-box {
+  background-color: #2b3f40; /* Charcoal Slate on hover */
+}
+
+/* About Me Section */
+.about-me-section {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center everything horizontally */
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 3em;
+  flex-wrap: wrap; /* Allow wrapping if needed for responsiveness */
+}
+
+/* Left Column: Image, Buttons, Socials */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the image, buttons, and socials */
+  margin-right: 2rem; /* Space between the photo and about box */
+  justify-content: center; /* Center everything vertically */
+}
+
+/* Profile Photo */
+.about-photo {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem; /* Space between image and buttons */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Social Icons */
+#socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem; /* Reduce gap */
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* Button Styles */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem; /* Reduce gap between buttons and socials */
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 0.8rem 1.5rem;
+  width: auto;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background-color: #eaeaea;
+}
+
+.btn-color-1 {
+  background-color: #a1b6b2;
+  color: white;
+}
+
+.btn-color-2 {
+  background-color: #2b3f40; /* Blue color */
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* About Me Text Box */
+.about-text-box {
+  background-color: #f6efe7;
+  border-radius: 8px;
+  padding: 1.5em;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center; /* Center-align the text */
+  margin-left: 2rem; /* Reduce gap between photo and text box */
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center; /* Center vertically */
+}
+
+.about-text-box p {
+  margin: 0;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .about-me-section {
+    flex-direction: column; /* Stack elements on smaller screens */
+    text-align: center;
+  }
+
+  .left-column {
+    margin-right: 0; /* Remove the right margin on smaller screens */
+    margin-bottom: 1rem; /* Add space between image and text box */
+  }
+
+  .about-text-box {
+    margin-left: 0;
+  }
+}
+
+/* Slideshow and Listening Section */
+.content-inline {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.slideshow-section,
+.listening-section {
+  flex: 1;
+  min-width: 280px;
+  max-width: 45%;
+  margin: 1em;
+}
+.slideshow-section h2,
+.listening-section h2 {
+  text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slide-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Center slideshow navigation buttons inside the box */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  transition: background-color 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Listening Section */
+.listening-box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+  justify-content: center;
+}
+
+.listening-box {
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.listening-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.listening-section h2 {
+  text-align: center;
+}
+
+.song-list {
+  margin-top: 1em;
+}
+
+.song-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.song-list ul li {
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Smooth fade animation */
+}
+
+.mini-album-cover {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+/* Image Button for Click Me */
+.listening-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 1em; /* Adds space above the button */
+}
+
+.clickme-button-image {
+  width: 200px; /* Adjust the size as needed */
+  height: auto;
+  display: block;
+}
+/* Modal container */
+#spotify-popup {
+  display: none; /* Hidden by default */
+  position: absolute; /* Position relative to mini-album */
+  width: 300px;
+  background-color: #fff; /* White background */
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  padding: 1em;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.modal iframe {
+  width: 100%;
+  height: 80px;
+  border-radius: 8px;
+}
+
+/* Mini album cover play button */
+.mini-album-cover-container {
+  position: relative;
+}
+
+.play-button {
+  position: absolute;
+  top: 0.325rem;
+  right: 0;
+  bottom: 0;
+  left: 0.325rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.play-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.song-item {
+  display: flex;
+  align-items: center;
+  clear: both;
+  width: 100%;
+}

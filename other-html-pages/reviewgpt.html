@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="developer/photographer/videographer Jay Vanam"
+    />
+    <meta
+      name="keywords"
+      content="Developer, Photographer, Videographer, Jay Vanam, Video, Photo, Jay Vanam Video, Jay Vanam Photo, Photographer, Jay Vanam Photography"
+    />
+    <meta name="author" content="Jay Vanam" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <title>Media | Jay Vanam</title>
+  </head>
+
+  <body>
+    <span style="cursor: pointer" onclick="openNav()"
+      ><p id="menu-icon">MENU</p></span
+    >
+
+    <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+
+    <div id="sidenav">
+      <div class="menu">
+        <a href="../index.html" id="header">
+          <img src="../media/name2.png" alt="Jay Vanam" id="name-image" />
+          <!-- Updated to use an image -->
+        </a>
+
+        <a href="../projects.html" id="here">Selected Projects</a>
+        <div class="dropdown-container">
+          <a href="../other-html-pages/fitty.html">fitty</a>
+          <a href="../other-html-pages/entry-wizard.html">entry wizard</a>
+          <a href="../other-html-pages/reviewgpt.html">reviewGPT</a>
+          <a href="../other-html-pages/trendalytics.html">trendalytics</a>
+          <a href="../other-html-pages/gitreviews.html">gitreviews</a>
+        </div>
+        <a href="../about.html">about</a>
+        <a href="../media.html">media</a>
+        <a href="../contact.html">contact</a>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("sidenav").style.width = "100vw";
+        document.getElementById("closebtn").style.display = "block";
+        document.getElementById("menu-icon").style.display = "none";
+      }
+
+      function closeNav() {
+        document.getElementById("sidenav").style.width = "0";
+        document.getElementById("closebtn").style.display = "none";
+        document.getElementById("menu-icon").style.display = "block";
+      }
+    </script>
+
+    <div class="main noninvert">
+      <h1>reviewGPT</h1>
+
+      <section class="project-section">
+        <h2>Overview</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          vehicula, enim sit amet varius consequat, arcu lectus feugiat turpis,
+          a accumsan lacus risus at neque.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Technology Stack</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a
+          libero ac orci vulputate pretium. Vivamus convallis dolor at metus
+          ultricies, vitae consequat sapien cursus.
+        </p>
+        <ul>
+          <li>Frontend: React Native</li>
+          <li>Backend: Firebase</li>
+          <li>Database: Firestore</li>
+          <li>Storage: Firebase Storage</li>
+        </ul>
+      </section>
+
+      <section class="project-section">
+        <h2>Challenges</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum
+          magna eget diam vehicula, non dapibus dolor convallis.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Solutions</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo
+          lacus in massa egestas, nec varius risus vehicula. Nam eget elit nisl.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Future Enhancements</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non
+          nisi id arcu aliquam cursus ut id metus. Integer non leo eu libero
+          accumsan ultrices.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="developer/photographer/videographer Jay Vanam"
+    />
+    <meta
+      name="keywords"
+      content="Developer, Photographer, Videographer, Jay Vanam, Video, Photo, Jay Vanam Video, Jay Vanam Photo, Photographer, Jay Vanam Photography"
+    />
+    <meta name="author" content="Jay Vanam" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Media | Jay Vanam</title>
+  </head>
+
+  <body>
+    <span style="cursor: pointer" onclick="openNav()"
+      ><p id="menu-icon">MENU</p></span
+    >
+
+    <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+
+    <div id="sidenav">
+      <div class="menu">
+        <a href="index.html" id="header">
+          <img src="media/name2.png" alt="Jay Vanam" id="name-image" />
+          <!-- Updated to use an image -->
+        </a>
+
+        <a href="projects.html" id="here">Selected Projects</a>
+        <div class="dropdown-container">
+          <a href="/other-html-pages/fitty.html">fitty</a>
+          <a href="/other-html-pages/entry-wizard.html">entry wizard</a>
+          <a href="/other-html-pages/reviewgpt.html">reviewGPT</a>
+          <a href="/other-html-pages/trendalytics.html">trendalytics</a>
+          <a href="/other-html-pages/gitreviews.html">gitreviews</a>
+        </div>
+        <a href="about.html">about</a>
+        <a href="media.html">media</a>
+        <a href="contact.html">contact</a>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("sidenav").style.width = "100vw";
+        document.getElementById("closebtn").style.display = "block";
+        document.getElementById("menu-icon").style.display = "none";
+      }
+
+      function closeNav() {
+        document.getElementById("sidenav").style.width = "0";
+        document.getElementById("closebtn").style.display = "none";
+        document.getElementById("menu-icon").style.display = "block";
+      }
+    </script>
+
+    <div class="main">
+      <div class="contact">
+        <p><strong>For any questions or inquiries, please contact:</strong></p>
+        <p>Email: nminhha0599@gmail.com</p>
+        <p>Tel: 518-645-5349</p>
+        <p>Instagram: <a href="https://www.instagram.com/jd.ngn/">&rarr;</a></p>
+      </div>
+    </div>
+  </body>
+</html>
