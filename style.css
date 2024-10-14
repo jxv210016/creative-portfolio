@@ -77,14 +77,17 @@ body {
 
 /* Main content */
 .main {
-  width: 75vw;
+  width: calc(75vw - 4em); /* Subtract padding from width */
   margin-left: 25vw; /* Same as the width of the sidenav */
   font-size: 1em;
   padding-top: 2.5em;
   padding-bottom: 5em;
   padding-left: 2em;
+  padding-right: 2em; /* Added padding-right for symmetry */
+  box-sizing: border-box; /* Include padding and border in width calculation */
   background-color: #ede8df; /* Light Taupe */
   color: #2b3f40; /* Charcoal Slate */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .main img:hover {
@@ -298,6 +301,8 @@ div.gallery:hover .workdesc {
   margin-top: 2em;
   padding-bottom: 1.5em;
   border-bottom: 1px solid #a1b6b2; /* Deep Teal for consistency */
+  padding-right: 2em; /* Match left padding if necessary */
+  box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 .project-section h2 {
@@ -323,6 +328,40 @@ div.gallery:hover .workdesc {
 
 .project-section ul li {
   margin-bottom: 0.5em;
+}
+
+/* Video container to maintain aspect ratio */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 1em;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-description {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.video-description h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.video-description h4 {
+  font-size: 16px;
+  color: #555;
 }
 
 /* General box styles */
@@ -693,4 +732,109 @@ div.gallery:hover .workdesc {
   align-items: center;
   clear: both;
   width: 100%;
+}
+
+/* Photo page styling */
+.media-content h1 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+/* Photo containers */
+.vertical-photo-container,
+.horizontal-photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.vertical-photo-container img,
+.horizontal-photo-container img {
+  max-width: 300px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.vertical-photo-container img:hover,
+.horizontal-photo-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+}
+
+/* Video styling */
+.video-page-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.video-page-containe iframe {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile friendly styling */
+@media screen and (max-width: 768px) {
+  .video-page-containe {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .video-page-containe iframe {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .video-page-containe {
+    grid-template-columns: 1fr; /* Stack videos vertically */
+  }
+
+  .video-page-containe iframe {
+    height: auto; /* Adjust height dynamically */
+  }
 }

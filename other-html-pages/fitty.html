@@ -44,7 +44,6 @@
           <a href="../other-html-pages/entry-wizard.html">entry wizard</a>
           <a href="../other-html-pages/reviewgpt.html">reviewGPT</a>
           <a href="../other-html-pages/trendalytics.html">trendalytics</a>
-          <a href="../other-html-pages/gitreviews.html">gitreviews</a>
         </div>
         <a href="../about.html">about</a>
         <a href="../media.html">media</a>
@@ -72,50 +71,94 @@
       <section class="project-section">
         <h2>Overview</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          vehicula, enim sit amet varius consequat, arcu lectus feugiat turpis,
-          a accumsan lacus risus at neque.
+          Fitty is a mobile application designed to help users manage and plan
+          their outfits efficiently. The app allows users to upload their
+          wardrobe, shuffle items to generate new outfits, and lock specific
+          items to avoid reshuffling. Users can save their favorite outfits for
+          future reference. Additionally, Fitty features a social feed where
+          users can follow others, share their outfit creations, and interact
+          with the community by liking posts. The app aims to provide a seamless
+          and personalized experience, focusing on user engagement and outfit
+          planning across devices.
         </p>
       </section>
 
       <section class="project-section">
         <h2>Technology Stack</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a
-          libero ac orci vulputate pretium. Vivamus convallis dolor at metus
-          ultricies, vitae consequat sapien cursus.
-        </p>
         <ul>
-          <li>Frontend: React Native</li>
-          <li>Backend: Firebase</li>
-          <li>Database: Firestore</li>
-          <li>Storage: Firebase Storage</li>
+          <li>Frontend: Flutter and Swift</li>
+          <li>
+            Backend: Firebase (Firestore for database, Firebase Authentication
+            for user management, and Firebase Storage for image handling)
+          </li>
+          <li>Languages: Dart and Swift</li>
+          <li>
+            Other Tools: Firebase Cloud Functions for server-side logic,
+            Firebase Analytics for tracking user engagement
+          </li>
         </ul>
       </section>
 
       <section class="project-section">
         <h2>Challenges</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum
-          magna eget diam vehicula, non dapibus dolor convallis.
+          One of the main challenges was creating a flexible and intuitive
+          outfit-shuffling mechanism. The algorithm needed to ensure that locked
+          items remained in place while generating new outfit combinations based
+          on color compatibility. Another challenge involved maintaining
+          seamless data synchronization across devices so users could access
+          their wardrobes and saved outfits from any platform without
+          interruptions. Lastly, scaling the social feed to handle user
+          interactions such as following, sharing, and liking outfits without
+          affecting app performance required careful consideration, especially
+          in terms of optimizing data queries and caching.
         </p>
       </section>
 
       <section class="project-section">
         <h2>Solutions</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo
-          lacus in massa egestas, nec varius risus vehicula. Nam eget elit nisl.
+          To address the challenge of outfit generation, the team developed an
+          algorithm that intelligently shuffles wardrobe items based on color
+          palettes. This ensures that the generated outfits are aesthetically
+          coherent, providing users with practical suggestions. To tackle the
+          issue of data synchronization, Firebase’s real-time capabilities were
+          utilized, allowing for smooth data updates across multiple devices,
+          ensuring users experience consistent interactions with their wardrobe
+          and outfits. For the social feed, caching mechanisms and optimized
+          Firestore queries were implemented to handle a growing number of
+          users, ensuring fast load times and efficient interactions.
         </p>
       </section>
 
       <section class="project-section">
         <h2>Future Enhancements</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non
-          nisi id arcu aliquam cursus ut id metus. Integer non leo eu libero
-          accumsan ultrices.
+          Looking ahead, the plan is to incorporate machine learning to offer
+          personalized outfit recommendations based on users’ preferences, usage
+          patterns, and seasonal trends. This would elevate the app's ability to
+          provide unique style suggestions tailored to each user. Additionally,
+          expanding the social features is on the roadmap, with potential
+          enhancements including the ability for users to comment on posts,
+          participate in fashion challenges, and create groups for sharing
+          outfits. Another possible future enhancement is integrating e-commerce
+          functionalities, allowing users to purchase new items directly through
+          the app, enhancing the wardrobe management experience.
         </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Demo</h2>
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/UwBqTreud1g"
+            title="Fitty Demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
       </section>
     </div>
   </body>

@@ -45,7 +45,6 @@
           <a href="../other-html-pages/entry-wizard.html">entry wizard</a>
           <a href="../other-html-pages/reviewgpt.html">reviewGPT</a>
           <a href="../other-html-pages/trendalytics.html">trendalytics</a>
-          <a href="../other-html-pages/gitreviews.html">gitreviews</a>
         </div>
         <a href="../about.html">about</a>
         <a href="../media.html">media</a>
@@ -73,49 +72,74 @@
       <section class="project-section">
         <h2>Overview</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          vehicula, enim sit amet varius consequat, arcu lectus feugiat turpis,
-          a accumsan lacus risus at neque.
+          ReviewGPT is a program designed to generate comprehensive pros and
+          cons lists for any product by processing Amazon product links. By
+          extracting over 1,760 reviews from diverse sources, including customer
+          feedback, the program ensures thorough evaluations. This tool
+          significantly reduces user decision-making time by 50%, providing
+          quick and accessible product assessments. Through automated analysis
+          achieving 95% accuracy, it enhances user trust and improves the
+          decision-making process for potential buyers.
         </p>
       </section>
 
       <section class="project-section">
         <h2>Technology Stack</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a
-          libero ac orci vulputate pretium. Vivamus convallis dolor at metus
-          ultricies, vitae consequat sapien cursus.
-        </p>
         <ul>
-          <li>Frontend: React Native</li>
-          <li>Backend: Firebase</li>
-          <li>Database: Firestore</li>
-          <li>Storage: Firebase Storage</li>
+          <li>Language: Python</li>
+          <li>
+            API's: OpenAI API for natural language processing and generating
+            summaries and Google Search API for retrieving additional reviews
+            and customer feedback
+          </li>
+          <li>
+            Web Scraping Tools: BeautifulSoup and Textblob for parsing HTML and
+            extracting
+          </li>
         </ul>
       </section>
 
       <section class="project-section">
         <h2>Challenges</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum
-          magna eget diam vehicula, non dapibus dolor convallis.
+          Some of the challenges were ensuring precise and reliable interactions
+          with dynamic web elements on the target platforms. Webpages often
+          change their structure or content, which can cause automation scripts
+          to fail if not properly managed. Optimizing the bot to achieve rapid
+          submission times without triggering any anti-bot mechanisms on the
+          platforms was also a significant hurdle. Additionally, scaling the bot
+          to handle over 100 daily submissions required robust error handling
+          and resource management to maintain high performance and prevent
+          downtime.
         </p>
       </section>
 
       <section class="project-section">
         <h2>Solutions</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo
-          lacus in massa egestas, nec varius risus vehicula. Nam eget elit nisl.
+          To address these challenges, the program utilized the OpenAI API for
+          advanced natural language processing, enabling effective summarization
+          and sentiment analysis of the extracted reviews. The Google Search API
+          was employed to gather additional customer feedback beyond Amazon,
+          ensuring a more comprehensive evaluation. Efficient algorithms were
+          implemented to process and analyze the data swiftly, achieving a 95%
+          accuracy rate in review analysis. This optimization not only improved
+          the reliability of the assessments but also significantly reduced the
+          time users spent on making purchase decisions
         </p>
       </section>
 
       <section class="project-section">
         <h2>Future Enhancements</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non
-          nisi id arcu aliquam cursus ut id metus. Integer non leo eu libero
-          accumsan ultrices.
+          Future plans for ReviewGPT include integrating support for more
+          e-commerce platforms to broaden the range of products and reviews
+          available for analysis. Incorporating machine learning algorithms to
+          further improve the accuracy of sentiment analysis and personalize
+          pros and cons lists based on individual user preferences is also
+          considered. Additionally, developing a user-friendly interface or
+          browser extension could enhance accessibility, allowing users to
+          generate product assessments directly while browsing online stores.
         </p>
       </section>
     </div>

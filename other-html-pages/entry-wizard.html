@@ -45,7 +45,6 @@
           <a href="../other-html-pages/entry-wizard.html">entry wizard</a>
           <a href="../other-html-pages/reviewgpt.html">reviewGPT</a>
           <a href="../other-html-pages/trendalytics.html">trendalytics</a>
-          <a href="../other-html-pages/gitreviews.html">gitreviews</a>
         </div>
         <a href="../about.html">about</a>
         <a href="../media.html">media</a>
@@ -73,50 +72,86 @@
       <section class="project-section">
         <h2>Overview</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          vehicula, enim sit amet varius consequat, arcu lectus feugiat turpis,
-          a accumsan lacus risus at neque.
+          Entry Wizard is a Discord bot designed to automate entry submissions
+          on platforms like Underdog Fantasy and PrizePicks. By precisely
+          interacting with web elements, the bot significantly enhances
+          operational efficiency, reducing the manual input time required from
+          users. It automates over 100 daily submissions, leading to a
+          substantial increase in speed and a remarkable improvement in monthly
+          returns, thereby minimizing the need for manual intervention.
         </p>
       </section>
 
       <section class="project-section">
         <h2>Technology Stack</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a
-          libero ac orci vulputate pretium. Vivamus convallis dolor at metus
-          ultricies, vitae consequat sapien cursus.
-        </p>
         <ul>
-          <li>Frontend: React Native</li>
-          <li>Backend: Firebase</li>
-          <li>Database: Firestore</li>
-          <li>Storage: Firebase Storage</li>
+          <li>Language: Python</li>
+          <li>API's: Discord API for bot interactions</li>
+          <li>
+            Automation Tools: Selenium for web automation, PyAutoGUI for GUI
+            automation
+          </li>
         </ul>
       </section>
 
       <section class="project-section">
         <h2>Challenges</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum
-          magna eget diam vehicula, non dapibus dolor convallis.
+          One of the primary challenges was ensuring precise and reliable
+          interactions with dynamic web elements on the target platforms.
+          Webpages often change their structure or content, which can cause
+          automation scripts to fail if not properly managed. Optimizing the bot
+          to achieve rapid submission times without triggering any anti-bot
+          mechanisms on the platforms was also a significant hurdle.
+          Additionally, scaling the bot to handle over 100 daily submissions
+          required robust error handling and resource management to maintain
+          high performance and prevent downtime.
         </p>
       </section>
 
       <section class="project-section">
         <h2>Solutions</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo
-          lacus in massa egestas, nec varius risus vehicula. Nam eget elit nisl.
+          To address the interaction challenges, Selenium was utilized for its
+          robust web automation capabilities, allowing the bot to navigate and
+          interact with web elements accurately. PyAutoGUI complemented this by
+          handling GUI-related tasks that required direct interaction with the
+          screen. The bot's performance was optimized by streamlining the code
+          and implementing asynchronous processes where possible, reducing the
+          submission time to approximately 30 seconds per entry—a 75% speed
+          increase. Comprehensive error handling and logging were implemented to
+          ensure the bot could run continuously, automating over 100 daily
+          submissions with minimal manual oversight.
         </p>
       </section>
 
       <section class="project-section">
         <h2>Future Enhancements</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non
-          nisi id arcu aliquam cursus ut id metus. Integer non leo eu libero
-          accumsan ultrices.
+          Future plans for Entry Wizard include integrating advanced scheduling
+          features to allow users to set specific times for submissions,
+          enhancing flexibility and user control. There's also an intention to
+          incorporate machine learning algorithms to predict the most favorable
+          submission times or selections, potentially increasing returns
+          further. Expanding compatibility with additional platforms and adding
+          a user-friendly dashboard for monitoring and managing the bot's
+          activities are also considered to enhance its utility and user
+          experience.
         </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Demo</h2>
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/5iuDD4GAuj0?si=DvOYSjPHCVguOopA"
+            title="Entry Wizard Demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
       </section>
     </div>
   </body>
