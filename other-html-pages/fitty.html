@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="developer/photographer/videographer Jay Vanam"
+    />
+    <meta
+      name="keywords"
+      content="Developer, Photographer, Videographer, Jay Vanam, Video, Photo, Jay Vanam Video, Jay Vanam Photo, Photographer, Jay Vanam Photography"
+    />
+    <meta name="author" content="Jay Vanam" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <title>Fitty | Jay Vanam</title>
+  </head>
+
+  <body>
+    <span style="cursor: pointer" onclick="openNav()"
+      ><p id="menu-icon">MENU</p></span
+    >
+
+    <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+
+    <div id="sidenav">
+      <div class="menu">
+        <a href="/" id="header">
+          <img src="../media/name2.png" alt="Jay Vanam" id="name-image" />
+        </a>
+
+        <a href="../projects.html" id="here">Selected Projects</a>
+        <div class="dropdown-container">
+          <a href="../other-html-pages/much'd.html">munch'd</a>
+          <a href="../other-html-pages/fitty.html">fitty</a>
+          <a href="../other-html-pages/entry-wizard.html">entry wizard</a>
+          <a href="../other-html-pages/reviewgpt.html">reviewGPT</a>
+          <a href="../other-html-pages/trendalytics.html">trendalytics</a>
+        </div>
+        <a href="/about">about</a>
+        <a href="/media">media</a>
+        <a href="/contact">contact</a>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("sidenav").style.width = "100vw";
+        document.getElementById("closebtn").style.display = "block";
+        document.getElementById("menu-icon").style.display = "none";
+      }
+
+      function closeNav() {
+        document.getElementById("sidenav").style.width = "0";
+        document.getElementById("closebtn").style.display = "none";
+        document.getElementById("menu-icon").style.display = "block";
+      }
+    </script>
+
+    <div class="main noninvert">
+      <h1>Fitty</h1>
+
+      <section class="project-section">
+        <h2>Overview</h2>
+        <p>
+          Fitty is a mobile application designed to help users manage and plan
+          their outfits efficiently. The app allows users to upload their
+          wardrobe, shuffle items to generate new outfits, and lock specific
+          items to avoid reshuffling. Users can save their favorite outfits for
+          future reference. Additionally, Fitty features a social feed where
+          users can follow others, share their outfit creations, and interact
+          with the community by liking posts. The app aims to provide a seamless
+          and personalized experience, focusing on user engagement and outfit
+          planning across devices.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Technology Stack</h2>
+        <ul>
+          <li>Frontend: Flutter and Swift</li>
+          <li>
+            Backend: Firebase (Firestore for database, Firebase Authentication
+            for user management, and Firebase Storage for image handling)
+          </li>
+          <li>Languages: Dart and Swift</li>
+          <li>
+            Other Tools: Firebase Cloud Functions for server-side logic,
+            Firebase Analytics for tracking user engagement
+          </li>
+        </ul>
+      </section>
+
+      <section class="project-section">
+        <h2>Challenges</h2>
+        <p>
+          One of the main challenges was creating a flexible and intuitive
+          outfit-shuffling mechanism. The algorithm needed to ensure that locked
+          items remained in place while generating new outfit combinations based
+          on color compatibility. Another challenge involved maintaining
+          seamless data synchronization across devices so users could access
+          their wardrobes and saved outfits from any platform without
+          interruptions. Lastly, scaling the social feed to handle user
+          interactions such as following, sharing, and liking outfits without
+          affecting app performance required careful consideration, especially
+          in terms of optimizing data queries and caching.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Solutions</h2>
+        <p>
+          To address the challenge of outfit generation, the team developed an
+          algorithm that intelligently shuffles wardrobe items based on color
+          palettes. This ensures that the generated outfits are aesthetically
+          coherent, providing users with practical suggestions. To tackle the
+          issue of data synchronization, Firebase’s real-time capabilities were
+          utilized, allowing for smooth data updates across multiple devices,
+          ensuring users experience consistent interactions with their wardrobe
+          and outfits. For the social feed, caching mechanisms and optimized
+          Firestore queries were implemented to handle a growing number of
+          users, ensuring fast load times and efficient interactions.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Future Enhancements</h2>
+        <p>
+          Looking ahead, the plan is to incorporate machine learning to offer
+          personalized outfit recommendations based on users’ preferences, usage
+          patterns, and seasonal trends. This would elevate the app's ability to
+          provide unique style suggestions tailored to each user. Additionally,
+          expanding the social features is on the roadmap, with potential
+          enhancements including the ability for users to comment on posts,
+          participate in fashion challenges, and create groups for sharing
+          outfits. Another possible future enhancement is integrating e-commerce
+          functionalities, allowing users to purchase new items directly through
+          the app, enhancing the wardrobe management experience.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Demo</h2>
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/UwBqTreud1g"
+            title="Fitty Demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

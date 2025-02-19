@@ -250,11 +250,13 @@ div.gallery {
   margin: 5px;
   float: left;
   height: 40vh;
+  overflow: hidden;
 }
 
 div.gallery img {
   height: 100%;
   width: auto;
+  object-fit: cover;
 }
 
 div.workdesc {
